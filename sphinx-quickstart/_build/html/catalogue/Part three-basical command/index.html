@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Part three: General Purpose Commands &mdash; ISC 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Part four: Use VPN in order to use google" href="../Part four-How to use VPN/index.html" />
+    <link rel="prev" title="Part two: Share folders" href="../Part two-VB-file-share-install-software/index.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ISC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Part one-Vbox/index.html">Part one: install ubuntu with Vbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part two-VB-file-share-install-software/index.html">Part two: Share folders</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Part three: General Purpose Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ls">ls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cd">cd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pwd">pwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mkdir">mkdir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#touch">touch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cat">cat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rm">rm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mv">mv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chown">chown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chmod">chmod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grep">grep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#find">find</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ping">ping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#top">top</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kill">kill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pkill">pkill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Part four-How to use VPN/index.html">Part four: Use VPN in order to use google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part five-how to use vi and ubuntu recovery mode/index.html">Part five: Vi and Ubuntu recovery mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part six-install metasploit and exploit based on MS17_010/index.html">Part six: install metasploit and exploit based on MS17_010</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part seven-build java go and node envoriment/index.html">Part seven: Set up java, go and node environment.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part eight-learn beego framework/index.html">Part eight: learn beego framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part nine-learn express framework/index.html">Part nine: learn express web framework</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ISC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Part three: General Purpose Commands</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/catalogue/Part three-basical command/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="part-three-general-purpose-commands">
+<h1>Part three: General Purpose Commands<a class="headerlink" href="#part-three-general-purpose-commands" title="永久链接至标题">¶</a></h1>
+<div class="section" id="ls">
+<h2>ls<a class="headerlink" href="#ls" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span></code> will show folders under the place where your terminal work, if we <code class="docutils literal notranslate"><span class="pre">ctrl+alt+t</span></code> to open a terminal then
+we use ls. It will show you like bellow.
+.. image:: /source/image/ls-one.png</p>
+<p>There are many options for you like -l, -a and so on. More details use <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ls</span></code> to check.</p>
+</div>
+<div class="section" id="cd">
+<h2>cd<a class="headerlink" href="#cd" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span></code> can get into any folder you want and there are some points you need to know. At least two, for one thing,
+<code class="docutils literal notranslate"><span class="pre">Relative</span> <span class="pre">paths</span></code>, we can simply understand it if the folder you want to get into in <code class="docutils literal notranslate"><span class="pre">ls</span></code> list. For another,
+<code class="docutils literal notranslate"><span class="pre">An</span> <span class="pre">absolute</span> <span class="pre">path</span></code>, it not in the <code class="docutils literal notranslate"><span class="pre">ls</span></code> list. If you want to know <strong>absolute path</strong> of thw folder you are working
+then use <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, it will show you.</p>
+<p><strong>relativepath</strong></p>
+<img alt="../../_images/relativepath.png" src="../../_images/relativepath.png" />
+<p><strong>absolutepath</strong></p>
+<img alt="../../_images/absolutepath.png" id="absolutepath" src="../../_images/absolutepath.png" />
+</div>
+<div class="section" id="pwd">
+<h2>pwd<a class="headerlink" href="#pwd" title="永久链接至标题">¶</a></h2>
+<p>Like I said above, <code class="docutils literal notranslate"><span class="pre">pwd</span></code> will return you the absolutepath of the palce your terminal are woking now.</p>
+</div>
+<div class="section" id="mkdir">
+<h2>mkdir<a class="headerlink" href="#mkdir" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> can help you to build a new folder, and if you need to build folders more than 3, then you need <code class="docutils literal notranslate"><span class="pre">-p</span></code>
+parameter. Like <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">-p</span> <span class="pre">hello/hello/hello</span></code>.</p>
+</div>
+<div class="section" id="touch">
+<h2>touch<a class="headerlink" href="#touch" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">touch</span></code> can help you to build a new file like .txt, .py, .md and so on. You just use it like <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">hello.txt</span></code>.</p>
+</div>
+<div class="section" id="cat">
+<h2>cat<a class="headerlink" href="#cat" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span></code> is a powerful command, it has many works like show you the context of file.
+More details check this web,
+<a class="reference external" href="https://www.tecmint.com/13-basic-cat-command-examples-in-linux/">cat command examples</a></p>
+</div>
+<div class="section" id="rm">
+<h2>rm<a class="headerlink" href="#rm" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">rm</span></code> can help you delete file or folder for you. You can use it like <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">hello.txt</span></code>, but if you want to
+delete folders, you need one parameter <code class="docutils literal notranslate"><span class="pre">-r</span></code> like <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">foldername</span></code>.</p>
+</div>
+<div class="section" id="mv">
+<h2>mv<a class="headerlink" href="#mv" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">mv</span></code> can move files or folders. You can use it like <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">hello.txt</span> <span class="pre">/home/</span></code> if you want to make it for sure,
+then <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/home</span> <span class="pre">&amp;&amp;</span> <span class="pre">ls</span></code> can help you. Not only move palce, but we can rename files or folders like <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">hello.txt</span>
+<span class="pre">helloworld.txt</span></code>.</p>
+</div>
+<div class="section" id="chown">
+<h2>chown<a class="headerlink" href="#chown" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">chown</span></code> can change permission of folders. But how to know we need to change
+permission? When you meet this problem like <code class="docutils literal notranslate"><span class="pre">permission</span> <span class="pre">denied</span></code>, you maybe need to change it.
+You can use it like <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">chown</span> <span class="pre">-R</span> <span class="pre">/home</span> <span class="pre">username</span></code>, you need to change <strong>username</strong> to make it work correctly.</p>
+</div>
+<div class="section" id="chmod">
+<h2>chmod<a class="headerlink" href="#chmod" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">chmod</span></code> can change permission of files or folder. You can use it like <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">chmod</span> <span class="pre">777</span> <span class="pre">/home/</span></code>. What is the
+difference between <code class="docutils literal notranslate"><span class="pre">chmod</span></code> and <code class="docutils literal notranslate"><span class="pre">chown</span></code>. Hope you find it by yourself.</p>
+</div>
+<div class="section" id="grep">
+<h2>grep<a class="headerlink" href="#grep" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">grep</span></code> can match a string for you in a file. You can use it like <code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">a</span> <span class="pre">hello.txt</span></code> to check if hello.txt
+has <strong>a</strong>.</p>
+</div>
+<div class="section" id="find">
+<h2>find<a class="headerlink" href="#find" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">find</span></code> can find everything you want to find in your OS. You can use it like <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">find</span> <span class="pre">/</span> <span class="pre">-name</span> <span class="pre">hello.txt</span></code>
+Then it will show you where is it.</p>
+<p><a class="reference external" href="https://www.tecmint.com/35-practical-examples-of-linux-find-command/">More examples of find</a></p>
+</div>
+<div class="section" id="ping">
+<h2>ping<a class="headerlink" href="#ping" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ping</span></code> can help you to check if you connent to internet or not like <code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">www.baidu.com</span></code>.</p>
+</div>
+<div class="section" id="top">
+<h2>top<a class="headerlink" href="#top" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">top</span></code> can list the source using situation.</p>
+</div>
+<div class="section" id="kill">
+<h2>kill<a class="headerlink" href="#kill" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">kill</span></code> can kill progress you want with PID like <code class="docutils literal notranslate"><span class="pre">kill</span> <span class="pre">9981</span></code>.</p>
+</div>
+<div class="section" id="pkill">
+<h2>pkill<a class="headerlink" href="#pkill" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pkill</span></code> can kill progress you want with name like <code class="docutils literal notranslate"><span class="pre">pkill</span> <span class="pre">Xorg</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Part four-How to use VPN/index.html" class="btn btn-neutral float-right" title="Part four: Use VPN in order to use google" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Part two-VB-file-share-install-software/index.html" class="btn btn-neutral" title="Part two: Share folders" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ISC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

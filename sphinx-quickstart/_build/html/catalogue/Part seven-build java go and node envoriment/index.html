@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Part seven: Set up java, go and node environment. &mdash; ISC 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Part eight: learn beego framework" href="../Part eight-learn beego framework/index.html" />
+    <link rel="prev" title="Part six: install metasploit and exploit based on MS17_010" href="../Part six-install metasploit and exploit based on MS17_010/index.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ISC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Part one-Vbox/index.html">Part one: install ubuntu with Vbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part two-VB-file-share-install-software/index.html">Part two: Share folders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part three-basical command/index.html">Part three: General Purpose Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part four-How to use VPN/index.html">Part four: Use VPN in order to use google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part five-how to use vi and ubuntu recovery mode/index.html">Part five: Vi and Ubuntu recovery mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Part six-install metasploit and exploit based on MS17_010/index.html">Part six: install metasploit and exploit based on MS17_010</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Part seven: Set up java, go and node environment.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-file">download file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unzip-file-downloaded">Unzip file downloaded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-profile">Edit profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-profile-work">Make profile work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-environment">Check environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Part eight-learn beego framework/index.html">Part eight: learn beego framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part nine-learn express framework/index.html">Part nine: learn express web framework</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ISC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Part seven: Set up java, go and node environment.</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/catalogue/Part seven-build java go and node envoriment/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="part-seven-set-up-java-go-and-node-environment">
+<h1>Part seven: Set up java, go and node environment.<a class="headerlink" href="#part-seven-set-up-java-go-and-node-environment" title="永久链接至标题">¶</a></h1>
+<div class="section" id="download-file">
+<h2>download file<a class="headerlink" href="#download-file" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">Java</a></p>
+<p><strong>Note</strong> choose accept like following.</p>
+<img alt="../../_images/java.png" src="../../_images/java.png" />
+<p>Go download gox.xx.linux-amd64.tar.gz</p>
+<p><a class="reference external" href="https://golang.org/dl/">Go</a></p>
+<p><a class="reference external" href="https://studygolang.com/dl">Go download for Chinese</a></p>
+<p><a class="reference external" href="https://nodejs.org/en/download/">Node</a></p>
+</div>
+<div class="section" id="unzip-file-downloaded">
+<h2>Unzip file downloaded<a class="headerlink" href="#unzip-file-downloaded" title="永久链接至标题">¶</a></h2>
+<p>Open a nautilus with <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nautilus</span></code>, then unzip our downloaded file.
+Go move its child folder named <strong>go</strong>,
+Java rename it java,
+Node rename it node.
+then copy above folder into <strong>/usr/local</strong> folder.</p>
+</div>
+<div class="section" id="edit-profile">
+<h2>Edit profile<a class="headerlink" href="#edit-profile" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">gedit</span> <span class="pre">/etc/profile</span></code>, then we need to add to some text in the profile opened like following.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+<span class="nb">export</span> <span class="nv">GOARCH</span><span class="o">=</span>amd64
+<span class="nb">export</span> <span class="nv">GOOS</span><span class="o">=</span>linux
+<span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>/home/username/gopath
+<span class="nb">export</span> <span class="nv">GOBIN</span><span class="o">=</span><span class="nv">$GOROOT</span>/bin
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$GOPATH</span>/bin:<span class="nv">$GOROOT</span>/bin:<span class="nv">$PATH</span>
+</pre></div>
+</div>
+<p><strong>You need to change username</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/java
+<span class="nb">export</span> <span class="nv">JRE_HOME</span><span class="o">=</span>/usr/local/java/jre
+<span class="nb">export</span> <span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="nv">$JAVA_HOME</span>/lib:<span class="nv">$JRE_HOME</span>/lib:<span class="nv">$CLASSPATH</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$JAVA_HOME</span>/bin:<span class="nv">$JRE_HOME</span>/bin:<span class="nv">$PATH</span>
+</pre></div>
+</div>
+<p><strong>Node need command, do not add following into profile.</strong>
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">/usr/local/node/bin</span> <span class="pre">/usr/local/share/bin</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">/usr/local/node/npm</span> <span class="pre">/usr/local/share/bin</span></code></p>
+</div>
+<div class="section" id="make-profile-work">
+<h2>Make profile work<a class="headerlink" href="#make-profile-work" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/etc/profile</span></code></p>
+</div>
+<div class="section" id="check-environment">
+<h2>Check environment<a class="headerlink" href="#check-environment" title="永久链接至标题">¶</a></h2>
+<p><strong>Java:</strong>
+<code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">version</span></code></p>
+<p><strong>Go:</strong>
+<code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">env</span></code></p>
+<p><strong>node:</strong>
+<code class="docutils literal notranslate"><span class="pre">node</span> <span class="pre">-v</span></code></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Part eight-learn beego framework/index.html" class="btn btn-neutral float-right" title="Part eight: learn beego framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Part six-install metasploit and exploit based on MS17_010/index.html" class="btn btn-neutral" title="Part six: install metasploit and exploit based on MS17_010" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ISC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
